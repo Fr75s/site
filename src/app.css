@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/font/Inter.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/font/Outfit.ttf') format('truetype');
+}
+
+@layer base {
+    html, body {
+        @apply bg-planet-100;
+    }
+    @media (prefers-color-scheme: dark) {
+        html, body {
+            @apply bg-planet-900;
+        }
+    }
+}
