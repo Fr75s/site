@@ -31,7 +31,7 @@ export const linkData = [
         displayName: "Tic-80",
         href: "https://tic80.com/",
         desc: `
-            Make and play retro-style games (I even made some)
+            Make and play retro-style games
         `,
         mine: false,
         starred: true,
@@ -44,7 +44,7 @@ export const linkData = [
         displayName: "Sploder Revival",
         href: "https://github.com/Sploder-Saptarshi/Sploder-Launcher",
         desc: `
-            A way to play games from the criminally underrated sploder today.
+            A way to play games from the criminally underrated Sploder today.
         `,
         mine: false,
         starred: true,
@@ -57,7 +57,7 @@ export const linkData = [
         displayName: "Kenney Assets",
         href: "https://kenney.nl/assets",
         desc: `
-            Free Game assets (I use this for audio)
+            Free game assets (I use this for audio)
         `,
         mine: false,
         starred: true,
@@ -79,22 +79,35 @@ export const linkData = [
         ]
     },
     {
-        displayName: "My Itch Page",
-        href: "https://fr75s.itch.io/",
+        displayName: "Rhythm Heaven Studio",
+        href: "https://rheavenstudio.itch.io/heaven-studio",
         desc: `
-            A few games I've made, free to play
+            Make custom Rhythm Heaven remixes
         `,
-        mine: true,
-        starred: false,
+        mine: false,
+        starred: true,
         tags: [
-            LinkTag.GAMING
+            LinkTag.GAMING,
+            LinkTag.CREATIVE
+        ]
+    },
+    {
+        displayName: "Neal Fun",
+        href: "https://neal.fun/",
+        desc: `
+            Various interactive things
+        `,
+        mine: false,
+        starred: true,
+        tags: [
+            LinkTag.MISC
         ]
     },
     {
         displayName: "GDBrowser",
         href: "https://gdbrowser.com",
         desc: `
-            Browse Geometry Dash online.
+            Browse the Geometry Dash servers online
         `,
         mine: false,
         starred: false,
@@ -113,6 +126,18 @@ export const linkData = [
         starred: false,
         tags: [
             LinkTag.CREATIVE
+        ]
+    },
+    {
+        displayName: "A Fine Start",
+        href: "https://afinestart.me/",
+        desc: `
+            Minimal new tab page
+        `,
+        mine: false,
+        starred: false,
+        tags: [
+            LinkTag.MISC
         ]
     },
     {

@@ -1,26 +1,42 @@
 <script>
-    import Github from "../img/Github.svelte";
-    import Discord from "../img/Discord.svelte";
+    import Github from "../img/footer/Github.svelte";
+    import Lemmy from "../img/footer/Lemmy.svelte";
+    import Itch from "../img/footer/Itch.svelte";
 
     import { navinfo } from "./Navigation.svelte";
 
+    // Define the icons for external links
+    // The actual icons are stored in svelte components (for easy styling)
     const icons = [
-        { component: Github, link: "https://github.com/fr75s" },
-        { component: Discord, link: "https://discord.gg/DUAFMgrhAY" }
+        { 
+            component: Github, 
+            link: "https://github.com/fr75s" 
+        },
+        { 
+            component: Lemmy, 
+            link: "https://lemmy.world/u/fr75s" 
+        },
+        { 
+            component: Itch, 
+            link: "https://fr75s.itch.io" 
+        }
     ];
 </script>
 
+<!-- Footer container -->
 <div class="p-4 mt-10 backdrop-blur bg-planet-400/40 dark:bg-planet-850/40 border-t border-planet-600/40">
     <div class="flex justify-between items-center mx-auto max-w-7xl min-h-16">
-        <!-- Copyright Text -->
+        <!-- Footer left side -->
         <div class="flex flex-col sm:flex-row sm:items-center">
+            <!-- Copyright Text -->
             <p class="text-md text-planet-900 dark:text-planet-100 sm:ml-2">
                 © 2024 pquirrel
                 <br>
-                <a href="#">
+                <a class="underline" href="https://github.com/Fr75s/site">
                     Source Code
                 </a>
             </p>
+            <!-- Footer navigation -->
             <div class="flex flex-col flex-wrap max-h-12 mt-2 sm:mt-0">
                 {#each navinfo as n}
                     <a
@@ -33,10 +49,12 @@
             </div>
         </div>
         
-        <div class="flex sm:mr-2">
+        <!-- Footer right side -->
+        <div class="flex flex-wrap sm:mr-2">
+            <!-- External link icons -->
             {#each icons as icon}
                 <a
-                    class="p-1 sm:p-2 ml-2 rounded-full hover:bg-planet-800/10 dark:hover:bg-planet-800"
+                    class="p-1 sm:p-2 ml-2 rounded-full transition-colors hover:bg-planet-800/10 dark:hover:bg-planet-800"
                     href={icon.link}
                 >
                     <svelte:component this={icon.component}

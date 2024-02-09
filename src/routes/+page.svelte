@@ -1,13 +1,14 @@
 <script>
 	import Block from './components/Block.svelte';
-	import Icon from './img/Icon.svelte';
-	import DownArrow from './img/DownArrow.svelte';
+	import Icon from './img/home/Icon.svelte';
+	import DownArrow from './img/home/DownArrow.svelte';
 </script>
 
 <svelte:head>
 	<title>Planet pquirrel</title>
 </svelte:head>
 
+<!-- Cover section -->
 <div class="mx-auto max-w-7xl flex h-dvh items-center">
 	<Icon 
 		class="ml-6 sm:mb-2 h-24 w-24 sm:h-32 sm:w-32 text-planet-900 dark:text-planet-100"
@@ -22,6 +23,7 @@
 	</div>
 </div>
 
+<!-- Scroll to about (in cover section) -->
 <button
 	class="absolute block left-0 right-0 mx-auto p-2 bottom-4 w-12 rounded-full text-planet-600 dark:text-planet-400 hover:bg-planet-200 dark:hover:bg-planet-800"
 	aria-label="Scroll to about"
@@ -35,7 +37,9 @@
 	<DownArrow/>
 </button>
 
+<!-- About section -->
 <Block id="about">
+	<!-- Writing -->
 	<div class="text-sm sm:text-md max-w-prose">
 		<h1 class="mb-2 font-bold text-xl text-planet-900 dark:text-planet-100">
 			About me
@@ -49,6 +53,7 @@
 			By the way, I really like Quirrel.
 		</p>
 	</div>
+	<!-- Image with sound on click -->
 	<button
 		aria-label="Play Quirrel Soundbite"
 		class="mt-4 ml-4 sm:mt-0"
@@ -60,12 +65,13 @@
 	>
 		<img 
 			class="max-h-36 rounded-md drop-shadow-md border border-planet-600/40"
-			src="/img/quirrel_icon.png"
+			src="/img/content/quirrel_icon.png"
 			alt="QUIRREL!"
 		/>
 	</button>
 </Block>
 
+<!-- About website section -->
 <Block id="about-website">
 	<div class="text-sm sm:text-md max-w-prose">
 		<h1 class="mb-2 font-bold text-xl text-planet-900 dark:text-planet-100">

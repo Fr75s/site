@@ -1,3 +1,4 @@
+<!-- A styled block of content -->
 <div 
 	class="mx-auto max-w-7xl"
 >

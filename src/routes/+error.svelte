@@ -4,12 +4,10 @@
 
 <div class="h-24" />
 
-<h1
-    class="mt-6 mb-4 text-center font-display font-bold text-4xl text-planet-900 dark:text-planet-100"
->
+<!-- Show status and error message -->
+<h1 class="mt-6 mb-4 text-center font-display font-bold text-4xl text-planet-900 dark:text-planet-100">
     {$page.status}
 </h1>
-
 <h2 class="mx-auto text-center max-w-prose text-2xl text-planet-900 dark:text-planet-100">
     {$page.error?.message}
 </h2>

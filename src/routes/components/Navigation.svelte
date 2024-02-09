@@ -2,7 +2,10 @@
     import { onMount } from 'svelte';
     import { fly } from 'svelte/transition';
 
+    // Only show mobile menu if enabled
     let mobileMenuOpen = false;
+
+    // Check if JavaScript enabled
     let jsEnabled = false;
 
     onMount(() => {
@@ -10,6 +13,7 @@
     })
 </script>
 
+<!-- Navigation link data -->
 <script context="module">
     export const navinfo = [
         {
@@ -31,6 +35,7 @@
     ];
 </script>
 
+<!-- Header -->
 <div class="fixed top-0 left-0 right-0 z-20 p-4 drop-shadow-md backdrop-blur bg-planet-400/40 dark:bg-planet-850/40 border-b border-planet-600/40">
     <!-- Main Navigation Menu -->
     <nav class="flex justify-between mx-auto max-w-7xl">
@@ -67,7 +72,7 @@
                 </a>
             {/each}
         </div>
-        <!-- <md: Show menu button -->
+        <!-- <md AND JS enabled: Show menu button -->
         {#if jsEnabled}
         <div class="flex md:hidden items-center">
             <button
@@ -85,7 +90,7 @@
         {/if}
     </nav>
 
-    <!-- Mobile Navigation Menu -->
+    <!-- Mobile Navigation Menu Modal -->
     {#if mobileMenuOpen}
         <div 
             class="fixed inset-y-0 right-0 z-30 w-full max-w-xl h-dvh drop-shadow-md backdrop-blur-md bg-planet-300/60 dark:bg-planet-850/60 border-l border-planet-600/40" 
@@ -97,8 +102,9 @@
                 x: 40
             }}
         >
+            <!-- Layout -->
             <div class="flex flex-col justify-between w-full h-full">
-                
+                <!-- Exit navigation icon -->
                 <div class="flex items-center justify-end ml-4 p-4">
                     <button
                         aria-label="Exit navigation menu"
@@ -113,6 +119,7 @@
                     </button>
                 </div>
 
+                <!-- Navigation links -->
                 <div class="flex flex-col-reverse items-center mb-4 p-4">
                     {#each navinfo as opts}
                         <a 
