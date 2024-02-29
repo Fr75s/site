@@ -50,7 +50,7 @@
 			<br class="mb-2">
 			I am a chronic Geometry Dash player, though I also like to play Levelhead, Hollow Knight and Celeste.
 			<br class="mb-2">
-			By the way, I really like Quirrel.
+			By the way, I am a big Quirrel fan.
 		</p>
 	</div>
 	<!-- Image with sound on click -->

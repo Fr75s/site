@@ -40,11 +40,30 @@
     Bonus Links
 </h1>
 
-<div class="flex flex-wrap justify-center">
+<div class="flex flex-wrap justify-center space-x-2">
     <a href="/">
         <img 
-            src="/img/content/88x31.png"
-            alt="Retro style 88 by 31 Planet pquirrel link button"
+            src="/img/content/retro/88x31.png"
+            alt="Retro style Planet pquirrel link button"
+            style="image-rendering: pixelated;"
+            width="88"
+            height="31"
+        />
+    </a>
+    <a href="https://archlinux.org/">
+        <img 
+            src="/img/content/retro/arch_88x31.png"
+            alt="Retro style Archlinux button"
+            style="image-rendering: pixelated;"
+            width="88"
+            height="31"
+        />
+    </a>
+    <a href="https://c.xkcd.com/random/comic/">
+        <img 
+            src="/img/content/retro/xkcd_88x31.png"
+            alt="Retro style XKCD button"
+            style="image-rendering: pixelated;"
             width="88"
             height="31"
         />

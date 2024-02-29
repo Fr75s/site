@@ -1,6 +1,6 @@
 <script>
-    import Github from "../img/footer/Github.svelte";
-    import Lemmy from "../img/footer/Lemmy.svelte";
+    import Git from "../img/footer/Git.svelte";
+    import Mastodon from "../img/footer/Mastodon.svelte";
     import Itch from "../img/footer/Itch.svelte";
 
     import { navinfo } from "./Navigation.svelte";
@@ -9,12 +9,12 @@
     // The actual icons are stored in svelte components (for easy styling)
     const icons = [
         { 
-            component: Github, 
+            component: Git, 
             link: "https://github.com/fr75s" 
         },
         { 
-            component: Lemmy, 
-            link: "https://lemmy.world/u/fr75s" 
+            component: Mastodon, 
+            link: "https://wetdry.world/@pquirrel"
         },
         { 
             component: Itch, 
