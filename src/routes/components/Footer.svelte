@@ -19,7 +19,7 @@
         },
         { 
             component: Itch, 
-            link: "https://fr75s.itch.io" 
+            link: "https://pquirrel.itch.io" 
         }
     ];
 </script>

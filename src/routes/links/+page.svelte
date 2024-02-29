@@ -4,6 +4,24 @@
 
     import Crown from "../img/links/Crown.svelte";
     import Star from "../img/links/Star.svelte";
+
+    const bonusLinks = [
+        { 
+            src: "/img/content/retro/88x31.png",
+            href: "/",
+            alt: "Retro style Planet pquirrel link button"
+        },
+        { 
+            src: "/img/content/retro/arch_88x31.png",
+            href: "https://archlinux.org/",
+            alt: "Retro style Arch Linux link button"
+        },
+        { 
+            src: "/img/content/retro/xkcd_88x31.png",
+            href: "https://c.xkcd.com/random/comic/",
+            alt: "Retro style XKCD button"
+        }
+    ];
 </script>
 
 <svelte:head>
@@ -41,31 +59,15 @@
 </h1>
 
 <div class="flex flex-wrap justify-center space-x-2">
-    <a href="/">
-        <img 
-            src="/img/content/retro/88x31.png"
-            alt="Retro style Planet pquirrel link button"
-            style="image-rendering: pixelated;"
-            width="88"
-            height="31"
-        />
-    </a>
-    <a href="https://archlinux.org/">
-        <img 
-            src="/img/content/retro/arch_88x31.png"
-            alt="Retro style Archlinux button"
-            style="image-rendering: pixelated;"
-            width="88"
-            height="31"
-        />
-    </a>
-    <a href="https://c.xkcd.com/random/comic/">
-        <img 
-            src="/img/content/retro/xkcd_88x31.png"
-            alt="Retro style XKCD button"
-            style="image-rendering: pixelated;"
-            width="88"
-            height="31"
-        />
-    </a>
+    {#each bonusLinks as link}
+        <a href={link.href}>
+            <img 
+                src={link.src}
+                alt={link.alt}
+                style="image-rendering: pixelated;"
+                width="88"
+                height="31"
+            />
+        </a>
+    {/each}
 </div>
