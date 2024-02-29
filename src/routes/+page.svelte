@@ -6,6 +6,7 @@
 
 <svelte:head>
 	<title>Planet pquirrel</title>
+	<link rel="me" href="https://wetdry.world/@pquirrel"/>
 </svelte:head>
 
 <!-- Cover section -->

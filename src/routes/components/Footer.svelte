@@ -14,7 +14,8 @@
         },
         { 
             component: Mastodon, 
-            link: "https://wetdry.world/@pquirrel"
+            link: "https://wetdry.world/@pquirrel",
+            rel: "me"
         },
         { 
             component: Itch, 
@@ -56,6 +57,7 @@
                 <a
                     class="p-1 sm:p-2 ml-2 rounded-full transition-colors hover:bg-planet-800/10 dark:hover:bg-planet-800"
                     href={icon.link}
+                    rel={icon?.rel}
                 >
                     <svelte:component this={icon.component}
                         class="h-6 sm:h-8 text-planet-900 dark:text-planet-100"
